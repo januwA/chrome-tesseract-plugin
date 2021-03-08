@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "tesseract",
+  "description": "use tesseract.js in chrome extension",
+  "version": "0.1.0",
+  "icons": {
+    "16": "popup/tesseract.png",
+    "48": "popup/tesseract.png",
+    "128": "popup/tesseract.png"
+  },
+  "browser_action": {
+    "default_icon": "popup/tesseract.png",
+    "default_title": "Tesseract",
+    "default_popup": "popup/index.html"
+  },
+  "content_security_policy": "script-src 'self' https://unpkg.com; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "storage"
+  ]
+}

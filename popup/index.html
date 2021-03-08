@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesseract.js Example</title>
+  </head>
+  <body>
+    <div>
+      <input id="input" type="text" placeholder="image url" />
+      <input id="lang" type="text" placeholder="Language" />
+      <button id="start">Start</button>
+      <a
+        href="https://tesseract-ocr.github.io/tessdoc/Data-Files#data-files-for-version-400-november-29-2016"
+        target="_blank"
+        >lang list</a
+      >
+    </div>
+    <br />
+    <progress id="p" max="1" hidden></progress>
+    <br>
+    <pre id="result"></pre>
+    <script src="https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
