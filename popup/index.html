@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tesseract.js Example</title>
   </head>
-  <body>
-    <div>
+  <body style="width: 600px">
+    <div style="display: grid; grid-template-columns: 1fr; grid-row-gap: 1em">
       <input id="input" type="text" placeholder="image url" />
+      <img id="display" style="width: 100%;" hidden>
+      <select id="langlist" multiple style="height: 11em"></select>
       <input id="lang" type="text" placeholder="Language" />
-      <button id="start">Start</button>
-      <a
-        href="https://tesseract-ocr.github.io/tessdoc/Data-Files#data-files-for-version-400-november-29-2016"
-        target="_blank"
-        >lang list</a
-      >
+      <div>
+        <button id="start">Start</button>
+        <a
+          href="https://tesseract-ocr.github.io/tessdoc/Data-Files#data-files-for-version-400-november-29-2016"
+          target="_blank"
+          >lang list</a
+        >
+      </div>
     </div>
     <br />
-    <progress id="p" max="1" hidden></progress>
-    <br>
+    <progress id="p" max="1" hidden style="width: 100%"></progress>
+    <br />
     <pre id="result"></pre>
     <script src="https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"></script>
     <script src="index.js"></script>
